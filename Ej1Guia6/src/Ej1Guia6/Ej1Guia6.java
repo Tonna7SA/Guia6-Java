@@ -19,11 +19,11 @@ public class Ej1Guia6 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int numero;
-        double decimal;
-        char letra;
-        String nombre;
-        boolean bandera;
-        byte numero1;
+        int numero = 2;
+        double decimal = 2.2;
+        char letra = 'a';
+        String nombre = "Gonzalo";
+        boolean bandera = true;
+        byte numero1 = 0;
     }
 }
