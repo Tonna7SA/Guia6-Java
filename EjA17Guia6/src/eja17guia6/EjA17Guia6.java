@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ej17guia6;
+package eja17guia6;
 
 import java.util.Scanner;
 
@@ -14,7 +14,7 @@ import java.util.Scanner;
 /*Recorrer un vector de N enteros contabilizando cuántos números son de 1 dígito, cuántos
 de 2 dígitos, etcétera (hasta 5 dígitos).
 */
-public class Ej17Guia6 {
+public class EjA17Guia6 {
 
     /**
      * @param args the command line arguments

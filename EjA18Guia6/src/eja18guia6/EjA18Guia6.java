@@ -25,14 +25,14 @@ public class EjA18Guia6 {
                matriz[i][j]=(int)(Math.random()*10);
            } 
         }
-        System.out.println(" ");
+        System.out.println("Matriz ");
         for(int i=0;i<4;i++){
            for(int j=0;j<4;j++){
                System.out.print("["+matriz[i][j]+"]");
             }
             System.out.println(" ");
         }
-        System.out.println(" ");
+        System.out.println("MAtriz Traspuesta ");
         for(int i=0;i<4;i++){
            for(int j=0;j<4;j++){
                System.out.print("["+matriz[j][i]+"]");

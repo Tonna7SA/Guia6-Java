@@ -21,9 +21,9 @@ public class EjA15Guia6 {
         int vector[] = new int[100];
         for(int i = 1; i<100; i++){
             vector[i] = i;
+        }
+        for(int i = 100; i>0; i--){
             System.out.println("Vector["+i+"]="+i);
-            
         }
     }
-    
 }
