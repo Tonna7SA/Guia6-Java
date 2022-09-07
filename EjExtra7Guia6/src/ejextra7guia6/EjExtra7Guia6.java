@@ -23,27 +23,29 @@ public class EjExtra7Guia6 {
      */
     public static void main(String[] args) {
         Scanner leer = new Scanner(System.in);
-        int cantidad=0;
-        //while (cantidad>0){
+        int cantidad = 0;
         version1(cantidad, leer);
-        
+
     }
 
     public static void version1(int cantidad, Scanner leer) {
         System.out.println("Ingrese la cantidad de numeros a comparar:");
         cantidad = leer.nextInt();
-        while (cantidad<1 || cantidad>10){
+
+        while (cantidad < 1 || cantidad > 10) {
             System.out.println("Ingrese una cantidad valida");
             cantidad = leer.nextInt();
-        }    
+        }
+
         int vector[] = new int[cantidad];
-        int i=0,max = 0, min = 0;
+        int i = 0, max = 0, min = 0;
         System.out.println("Ingrese los " + cantidad + " numeros:");
+
         do {
-           vector[i] = leer.nextInt();
-           i++;
-                      
-       } while (i!=cantidad);
+            vector[i] = leer.nextInt();
+            i++;
+
+        } while (i != cantidad);
         min = vector[0];
         max = vector[0];
 
@@ -59,5 +61,5 @@ public class EjExtra7Guia6 {
         System.out.println("El maximo ingresado es: " + max);
 
     }
-    
+
 }

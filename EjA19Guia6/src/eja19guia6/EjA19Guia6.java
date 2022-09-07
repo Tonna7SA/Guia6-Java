@@ -5,7 +5,6 @@
  */
 package eja19guia6;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -26,7 +25,7 @@ public class EjA19Guia6 {
         Scanner leer = new Scanner(System.in);
         int matriz[][] = new int[3][3];
         int matriz1[][] = new int[3][3];
-        boolean respuesta = false;
+        boolean respuesta = true;
         System.out.println("Ingrese los 9 numeros de la Matriz");
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
@@ -57,13 +56,12 @@ public class EjA19Guia6 {
         }
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
-                if (matriz[i][j] + matriz1[i][j] == 0) {
-                    respuesta = true;
-                } else {
+                if (matriz[i][j] + matriz1[i][j] != 0) {
                     respuesta = false;
+                } 
                 }
             }
-        }
+        
         System.out.println("");
         if (respuesta == true) {
             System.out.println("La Matriz es Antisimetrica");
