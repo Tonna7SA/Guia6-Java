@@ -31,7 +31,7 @@ public class EjExtra7Guia6 {
     public static void version1(int cantidad, Scanner leer) {
         System.out.println("Ingrese la cantidad de numeros a comparar:");
         cantidad = leer.nextInt();
-
+        double suma=0;
         while (cantidad < 1 || cantidad > 10) {
             System.out.println("Ingrese una cantidad valida");
             cantidad = leer.nextInt();
@@ -43,8 +43,9 @@ public class EjExtra7Guia6 {
 
         do {
             vector[i] = leer.nextInt();
+            suma +=vector[i];
             i++;
-
+            
         } while (i != cantidad);
         min = vector[0];
         max = vector[0];
@@ -59,7 +60,7 @@ public class EjExtra7Guia6 {
         }
         System.out.println("El minimo ingresado es: " + min);
         System.out.println("El maximo ingresado es: " + max);
-
+        System.out.println("El promedio de numero ingresados es: "+suma/cantidad);
     }
 
 }
